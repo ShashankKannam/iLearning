@@ -16,6 +16,7 @@
 		982AE8161E8DEB9900252774 /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 982AE8151E8DEB9900252774 /* HTTPService.m */; };
 		98E6E29E1E9054F000A3C0E7 /* VideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6E29D1E9054F000A3C0E7 /* VideoTableViewCell.m */; };
 		98E6E2A21E90604A00A3C0E7 /* Videos.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6E2A11E90604A00A3C0E7 /* Videos.m */; };
+		98E6E2A61E907EBF00A3C0E7 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6E2A51E907EBF00A3C0E7 /* VideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		98E6E29D1E9054F000A3C0E7 /* VideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoTableViewCell.m; sourceTree = "<group>"; };
 		98E6E2A01E90604A00A3C0E7 /* Videos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Videos.h; sourceTree = "<group>"; };
 		98E6E2A11E90604A00A3C0E7 /* Videos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Videos.m; sourceTree = "<group>"; };
+		98E6E2A41E907EBF00A3C0E7 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		98E6E2A51E907EBF00A3C0E7 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +73,9 @@
 				98E6E29F1E90603700A3C0E7 /* Model */,
 				98E6E29B1E9054CB00A3C0E7 /* View */,
 				982AE8131E8DEB2300252774 /* Services */,
+				98E6E2A31E907E8C00A3C0E7 /* Controller */,
 				982AE7FF1E8DEB1600252774 /* AppDelegate.h */,
 				982AE8001E8DEB1600252774 /* AppDelegate.m */,
-				982AE8021E8DEB1600252774 /* ViewController.h */,
-				982AE8031E8DEB1600252774 /* ViewController.m */,
 				982AE8051E8DEB1600252774 /* Main.storyboard */,
 				982AE8081E8DEB1600252774 /* Assets.xcassets */,
 				982AE80A1E8DEB1600252774 /* LaunchScreen.storyboard */,
@@ -116,6 +118,17 @@
 				98E6E2A11E90604A00A3C0E7 /* Videos.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		98E6E2A31E907E8C00A3C0E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				982AE8021E8DEB1600252774 /* ViewController.h */,
+				982AE8031E8DEB1600252774 /* ViewController.m */,
+				98E6E2A41E907EBF00A3C0E7 /* VideoViewController.h */,
+				98E6E2A51E907EBF00A3C0E7 /* VideoViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +206,7 @@
 				98E6E2A21E90604A00A3C0E7 /* Videos.m in Sources */,
 				982AE8041E8DEB1600252774 /* ViewController.m in Sources */,
 				982AE8161E8DEB9900252774 /* HTTPService.m in Sources */,
+				98E6E2A61E907EBF00A3C0E7 /* VideoViewController.m in Sources */,
 				982AE8011E8DEB1600252774 /* AppDelegate.m in Sources */,
 				982AE7FE1E8DEB1600252774 /* main.m in Sources */,
 			);

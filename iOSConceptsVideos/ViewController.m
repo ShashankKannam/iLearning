@@ -10,6 +10,7 @@
 #import "HTTPService.h"
 #import "Videos.h"
 #import "VideoTableViewCell.h"
+#import "VideoViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -60,13 +61,19 @@
 
 
 - (void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    Videos *video = [self.videosList objectAtIndex:indexPath.row];
+    VideoTableViewCell *vcell = (VideoTableViewCell*)cell;
+     [vcell configureCell:video];
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    Videos *video = [self.videosList objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"VideoVC" sender:video];
 }
 
+- (NSInteger) tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 10;
+}
 
 - (UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -75,8 +82,6 @@
     if(!cell){
         cell = [VideoTableViewCell new];
     }
-    
-    [cell configureCell:_videosList[indexPath.row]];
     
     return cell;
 }
@@ -88,6 +93,17 @@
 
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    VideoViewController *vc = (VideoViewController*)segue.destinationViewController;
+    
+    Videos *video = (Videos*)sender;
+    
+    if (vc != nil && video != nil){
+        vc.video = video;
+    }
 }
 
 @end
