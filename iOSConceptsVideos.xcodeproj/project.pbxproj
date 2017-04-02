@@ -14,6 +14,8 @@
 		982AE8091E8DEB1600252774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982AE8081E8DEB1600252774 /* Assets.xcassets */; };
 		982AE80C1E8DEB1600252774 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982AE80A1E8DEB1600252774 /* LaunchScreen.storyboard */; };
 		982AE8161E8DEB9900252774 /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 982AE8151E8DEB9900252774 /* HTTPService.m */; };
+		98E6E29E1E9054F000A3C0E7 /* VideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6E29D1E9054F000A3C0E7 /* VideoTableViewCell.m */; };
+		98E6E2A21E90604A00A3C0E7 /* Videos.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6E2A11E90604A00A3C0E7 /* Videos.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		982AE80D1E8DEB1600252774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		982AE8141E8DEB9900252774 /* HTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
 		982AE8151E8DEB9900252774 /* HTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
+		98E6E29C1E9054F000A3C0E7 /* VideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoTableViewCell.h; sourceTree = "<group>"; };
+		98E6E29D1E9054F000A3C0E7 /* VideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoTableViewCell.m; sourceTree = "<group>"; };
+		98E6E2A01E90604A00A3C0E7 /* Videos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Videos.h; sourceTree = "<group>"; };
+		98E6E2A11E90604A00A3C0E7 /* Videos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Videos.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,8 @@
 		982AE7FB1E8DEB1600252774 /* iOSConceptsVideos */ = {
 			isa = PBXGroup;
 			children = (
+				98E6E29F1E90603700A3C0E7 /* Model */,
+				98E6E29B1E9054CB00A3C0E7 /* View */,
 				982AE8131E8DEB2300252774 /* Services */,
 				982AE7FF1E8DEB1600252774 /* AppDelegate.h */,
 				982AE8001E8DEB1600252774 /* AppDelegate.m */,
@@ -90,6 +98,24 @@
 				982AE8151E8DEB9900252774 /* HTTPService.m */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		98E6E29B1E9054CB00A3C0E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				98E6E29C1E9054F000A3C0E7 /* VideoTableViewCell.h */,
+				98E6E29D1E9054F000A3C0E7 /* VideoTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		98E6E29F1E90603700A3C0E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				98E6E2A01E90604A00A3C0E7 /* Videos.h */,
+				98E6E2A11E90604A00A3C0E7 /* Videos.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98E6E29E1E9054F000A3C0E7 /* VideoTableViewCell.m in Sources */,
+				98E6E2A21E90604A00A3C0E7 /* Videos.m in Sources */,
 				982AE8041E8DEB1600252774 /* ViewController.m in Sources */,
 				982AE8161E8DEB9900252774 /* HTTPService.m in Sources */,
 				982AE8011E8DEB1600252774 /* AppDelegate.m in Sources */,
@@ -325,6 +353,7 @@
 				982AE8121E8DEB1600252774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
